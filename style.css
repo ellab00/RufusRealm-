@@ -1,0 +1,411 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffcc66;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff9933;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fce5cd;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9933;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffcc66;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #333;
+}
+
+/* About Page Styles */
+
+.about {
+    background-color: #fdf6e4;
+    padding: 2rem 1rem;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    color: #555;
+}
+
+.about ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared Footer and Header Styles */
+footer {
+    background-color: #ffcc66;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Gallery Page Styles */
+
+.gallery {
+    background-color: #fdf6e4;
+    padding: 2rem 1rem;
+}
+
+.gallery .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.gallery p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared Footer Styles */
+footer {
+    background-color: #ffcc66;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Fun Facts Page Styles */
+
+.fun-facts {
+    background-color: #fdf6e4;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.fun-facts .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fun-facts h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#fact-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#dog-fact {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#fetch-fact {
+    padding: 0.8rem 1.2rem;
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-fact:hover {
+    background-color: #e68a00;
+}
+
+.game {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.game .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#game-container {
+    margin-top: 1.5rem;
+}
+
+.game-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#breed-guess {
+    padding: 0.8rem;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#submit-guess {
+    padding: 0.8rem 1.2rem;
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-guess:hover {
+    background-color: #e68a00;
+}
+
+#game-feedback {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Contact Page Styles */
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#contact-form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e68a00;
+}

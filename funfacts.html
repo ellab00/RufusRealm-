@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover fun facts about dogs and play a fun guessing game with Rufus!">
+    <meta name="keywords" content="Rufus Fun Facts, Dog Trivia, Interactive Game, Dog API">
+    <meta name="author" content="Your Name">
+    <title>Fun Facts | Rufus Realm</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Rufus Realm</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="funfacts.html" class="active">Fun Facts</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <div class="container">
+            <h2>Dog Fun Facts</h2>
+            <p>Here are some amazing facts about dogs fetched directly from an API!</p>
+            <div id="fact-container">
+                <p id="dog-fact">Loading fun facts...</p>
+                <button id="fetch-fact">Get Another Fun Fact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section class="game">
+        <div class="container">
+            <h2>Guess the Breed Game</h2>
+            <p>Try to guess the dog breed based on the image shown below!</p>
+            <div id="game-container">
+                <img id="dog-image" src="images/pug.jpg" alt="A random dog" class="game-image">
+                <input type="text" id="breed-guess" placeholder="Enter your guess...">
+                <button id="submit-guess">Submit Guess</button>
+                <p id="game-feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rufus Realm. All rights reserved.</p>
+    </footer>
+    <script src="fun-facts-script.js"></script>
+</body>
+</html>
